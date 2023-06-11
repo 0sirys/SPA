@@ -1,28 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
 *{
     font-family: 'Poppins',sans-serif;
-    font-weight: bold;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     
     
 }
-div{
+.body{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+.Search{
     margin: 0;
-    padding: 10px 10%;
-    width: 100%;
+    padding:0;
+    width:50%;
+    height:50px;
     position: relative;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    align-items:flex-start;
+    border: none;
+    border-radius: 50px;
+    background-color: antiquewhite;
+    overflow: hidden;
 }
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 500,
-  'GRAD' 400,
-  'opsz' 24
+.Search input{
+  border: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  font-size: 18px;
+  border-radius: 20px;
+  outline-style: none;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
 }
 
+.Search input::placeholder{
+  text-align: center;
+  font-weight:bold;
+  font-size: 24px;
+  
+}
+.list{
+  display: flex;
+  position: absolute;
+  width: 50%;
+  top: 41%;
+  border: none;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  overflow: hidden;
+ 
+ 
+}
+.list-items{
+  margin: 0;
+  padding: 0 ;
+  border: none;
+  list-style: none;
+  
+ 
 
+}

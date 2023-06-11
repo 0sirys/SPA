@@ -7,17 +7,21 @@ import { SaleComponent} from './Sales/sale.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NvarComponent } from './nvar/nvar.component';
 import { ClientComponent } from './Client/client.component';
+import {HttpClientModule} from '@angular/common/http'
+import { ElementComponent } from './Elementos/Element.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SaleComponent,
     NvarComponent,
-    ClientComponent
+    ClientComponent,
+    ElementComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
 
   ],
   providers: [],
