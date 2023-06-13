@@ -6,11 +6,12 @@
 </head>
 <body class="body">
   <div class="Search">
-    <input  type="search" placeholder="Products" (input)="search($event)"/>
+    <input  type="text" placeholder="Products" (input)="search($event)"/>
   </div>
-  <div class="list">
+  <div class="list" id="lista">
     <ul class="list-items">
-      <producto></producto>
+      <producto *ngFor="let pro of result" [elemento]="pro"></producto>
+    
     </ul>
   </div>
 </body>

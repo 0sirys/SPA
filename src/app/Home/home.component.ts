@@ -1,11 +1,12 @@
 import { Component, Inject, OnInit, inject } from "@angular/core";
 import { SearchBar } from "../Service/Searchbar.service";
 import { Crud } from "../Interface/CRUD.interface";
+import { ElementComponent } from "../Elementos/Element.component";
 
 
 
 
- 
+
 
 @Component({
     selector: 'home',
@@ -13,20 +14,24 @@ import { Crud } from "../Interface/CRUD.interface";
     styleUrls: ['./home.component.css']
 
 })
-export class HomeComponent /* implements OnInit */ {
-    constructor(private _sea:SearchBar){}
+export class HomeComponent {
+    public result!: Array<Crud>;
+    public clean: Array<Crud> =[{id:0, name:''}];
+    constructor(private _sea: SearchBar) { }
 
-    ngOnInit(): void {
-    }
     search(event: Event) {
         
-        const key= event.currentTarget as HTMLInputElement;
-        const result =this._sea.filter(key.value);
-    
+        const key = event.currentTarget as HTMLInputElement;
+        console.log(key.value);
+        console.log(key.value.length);
+        if (key.value.length > 1) {
 
 
+            this.result = this._sea.filter(key.value);
+            console.log(this.result);
+        }else{
+            this.result=this.clean;
+            
+        }
     }
-
-
-
 }
