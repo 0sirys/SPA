@@ -9,6 +9,7 @@ import { NvarComponent } from './nvar/nvar.component';
 import { ClientComponent } from './Client/client.component';
 import {HttpClientModule} from '@angular/common/http'
 import { ElementComponent } from './Elementos/Element.component';
+import {ReactiveFormsModule} from'@angular/forms'
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,10 @@ import { ElementComponent } from './Elementos/Element.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
+   
+
 
   ],
   providers: [],

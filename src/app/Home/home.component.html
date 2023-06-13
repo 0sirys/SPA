@@ -1,17 +1,16 @@
 <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  />
 </head>
 <body class="body">
-    <div class="Search">
-            <input type="text" placeholder="Products">
-            
-    </div>
-    <div class="list">
-        <ul class="list-items">
-            <producto></producto>
-    
-            
-        </ul>
-    </div>
-
+  <div class="Search">
+    <input  type="search" placeholder="Products" (input)="search($event)"/>
+  </div>
+  <div class="list">
+    <ul class="list-items">
+      <producto></producto>
+    </ul>
+  </div>
 </body>

@@ -8,17 +8,19 @@
     
 }
 .body{
-  display:flex;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   justify-content: center;
   align-items: center;
   min-height: 50vh;
+
 }
 .Search{
-    margin: 0;
+    margin:0;
     padding:0;
     width:50%;
     height:50px;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items:flex-start;
@@ -26,6 +28,8 @@
     border-radius: 50px;
     background-color: antiquewhite;
     overflow: hidden;
+    
+    
 }
 
 .Search input{
@@ -48,15 +52,14 @@
   
 }
 .list{
+  margin: 0;
   display: flex;
-  position: absolute;
   width: 50%;
-  top: 41%;
   border: none;
   border-radius: 10px;
   align-items: center;
   justify-content: center;
-  background-color: aliceblue;
+  background-color: aqua;
   overflow: hidden;
  
  

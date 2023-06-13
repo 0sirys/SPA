@@ -1,23 +1,16 @@
-import { Component,} from '@angular/core';
-import { ApiclientService } from '../Service/apiclient.service';
+import { Component, } from '@angular/core';
+
 
 @Component({
     selector: 'producto',
     templateUrl: './Element.component.html',
-    styleUrls:['./Element.component.css']
+    styleUrls: ['./Element.component.css']
 })
-export class ElementComponent{
-   public elemento : any ;
-    constructor(
-        private apiclient:ApiclientService
-    ){
-        this.elemento=this.apiclient.getProducts().subscribe(re=>{
-             this.elemento=Object.values(re);
-                
-            });
-        }
+export class ElementComponent {
+
 }
-    
+
+
 
 
 
